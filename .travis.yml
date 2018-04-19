@@ -22,7 +22,7 @@ addons:
     project:
       name: "cryptomator/cryptomator"
     notification_email: sebastian.stenzel@cryptomator.org
-    build_command: "mvn -fmain/pom.xml clean test -DskipTests"
+    build_command: "echo 'will build...'; mvn -fmain/pom.xml clean test -DskipTests"
     branch_pattern: release.*
 install:
 - curl -o $HOME/.m2/settings.xml https://gist.githubusercontent.com/cryptobot/cf5fbd909c4782aaeeeb7c7f4a1a43da/raw/e60ee486e34ee0c79f89f947abe2c83b4290c6bb/settings.xml
